@@ -9,23 +9,25 @@
 /* Begin PBXBuildFile section */
 		CEF6E0C626B87C3C005599C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF6E0C526B87C3C005599C1 /* AppDelegate.swift */; };
 		CEF6E0C826B87C3C005599C1 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = CEF6E0C726B87C3C005599C1 /* GameScene.sks */; };
-		CEF6E0CA26B87C3C005599C1 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = CEF6E0C926B87C3C005599C1 /* Actions.sks */; };
 		CEF6E0CC26B87C3C005599C1 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF6E0CB26B87C3C005599C1 /* GameScene.swift */; };
 		CEF6E0CE26B87C3C005599C1 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF6E0CD26B87C3C005599C1 /* GameViewController.swift */; };
 		CEF6E0D126B87C3C005599C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF6E0CF26B87C3C005599C1 /* Main.storyboard */; };
 		CEF6E0D326B87C40005599C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEF6E0D226B87C40005599C1 /* Assets.xcassets */; };
+		CEF6E0DC26B87CE1005599C1 /* explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = CEF6E0DA26B87CE1005599C1 /* explosion.sks */; };
+		CEF6E0DD26B87CE1005599C1 /* starfield.sks in Resources */ = {isa = PBXBuildFile; fileRef = CEF6E0DB26B87CE1005599C1 /* starfield.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CEF6E0C226B87C3C005599C1 /* Project17.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project17.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF6E0C526B87C3C005599C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEF6E0C726B87C3C005599C1 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		CEF6E0C926B87C3C005599C1 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		CEF6E0CB26B87C3C005599C1 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		CEF6E0CD26B87C3C005599C1 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		CEF6E0D026B87C3C005599C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEF6E0D226B87C40005599C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEF6E0D426B87C40005599C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEF6E0DA26B87CE1005599C1 /* explosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = explosion.sks; sourceTree = "<group>"; };
+		CEF6E0DB26B87CE1005599C1 /* starfield.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = starfield.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +62,13 @@
 			children = (
 				CEF6E0C526B87C3C005599C1 /* AppDelegate.swift */,
 				CEF6E0C726B87C3C005599C1 /* GameScene.sks */,
-				CEF6E0C926B87C3C005599C1 /* Actions.sks */,
 				CEF6E0CB26B87C3C005599C1 /* GameScene.swift */,
 				CEF6E0CD26B87C3C005599C1 /* GameViewController.swift */,
 				CEF6E0CF26B87C3C005599C1 /* Main.storyboard */,
 				CEF6E0D226B87C40005599C1 /* Assets.xcassets */,
 				CEF6E0D426B87C40005599C1 /* Info.plist */,
+				CEF6E0DA26B87CE1005599C1 /* explosion.sks */,
+				CEF6E0DB26B87CE1005599C1 /* starfield.sks */,
 			);
 			path = Project17;
 			sourceTree = "<group>";
@@ -130,7 +133,8 @@
 				CEF6E0D126B87C3C005599C1 /* Main.storyboard in Resources */,
 				CEF6E0C826B87C3C005599C1 /* GameScene.sks in Resources */,
 				CEF6E0D326B87C40005599C1 /* Assets.xcassets in Resources */,
-				CEF6E0CA26B87C3C005599C1 /* Actions.sks in Resources */,
+				CEF6E0DC26B87CE1005599C1 /* explosion.sks in Resources */,
+				CEF6E0DD26B87CE1005599C1 /* starfield.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +295,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Andre.Project17;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -309,7 +313,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Andre.Project17;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
